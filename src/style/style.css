@@ -231,7 +231,7 @@ body {
     .App {
         background-color: #05292E;
         display:flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -242,6 +242,7 @@ body {
     
     .App form {
         display: flex;
+        flex-direction: column;
         width: 100%;   
         min-height: 10em;
         flex-wrap: wrap;
@@ -258,7 +259,7 @@ body {
         width: 280px;
         height: auto;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         column-gap: 1em;
         align-items: center;
         justify-content: center;
@@ -314,7 +315,7 @@ body {
         width: 100%;
     }
     .residents__img p{
-        display: inline-block;
+        display: block;
         padding: 5px;
         width: 180px;
         height: 42;
@@ -352,7 +353,7 @@ body {
         background-color: #05292E;
         width: 300px;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         column-gap: 1em;
         align-items: center;
         justify-content: center;
