@@ -74,12 +74,16 @@ function App() {
             ? (<ErrorSearch />)
             : (
               <>
-                <LocationInfo location={location} />
-                <div className='residentsCard'>
-                  {location?.residents.map((residents) => (
-                    <CardResident key={residents} residents={residents} />
-                  ))}
-                </div>
+                <section className='sectionLocation'>
+                  <LocationInfo location={location} />
+                </section>
+                <section className='sectionResidents'>
+                  <div className='residentsCard'>
+                    {location?.residents.map((residents) => (
+                      <CardResident key={residents} residents={residents} />
+                    ))}
+                  </div>
+                </section>
               </>
               )}
         </section>
